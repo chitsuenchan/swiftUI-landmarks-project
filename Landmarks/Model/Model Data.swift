@@ -11,6 +11,19 @@ import Combine //conforms to the ObservableObject protocol
 final class ModelData: ObservableObject{
     @Published var landmarks: [Landmark] = load("landmarkData.json")
     var hikes: [Hike] = load("hikeData.json") // We will never modify hike data after loading it so we don't need @Published
+    
+    // contains only landmarks that have featured set to true
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
+    
+    // computed categories dictionary, with category names as keys, and an array of associated landmarks for each key.
+    var categories: [String: [Landmark]] {
+        Dictionary(
+            grouping: landmarks,
+            by: { $0.category.rawValue }
+        )
+    }
 }
 
 

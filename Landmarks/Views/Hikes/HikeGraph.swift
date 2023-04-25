@@ -7,6 +7,15 @@ The elevation, heart rate, and pace of a hike plotted on a graph.
 
 import SwiftUI
 
+// Creating its own animation here
+extension Animation {
+    static func ripple(index: Int) -> Animation {
+        Animation.spring(dampingFraction: 0.5) // Make the bars hop
+            .speed(2) // Speed up animation to shorten the time each bar takes to move to its new place
+            .delay(0.03 * Double(index)) // delay to each animation based on capsule position 
+    }
+}
+
 struct HikeGraph: View {
     var hike: Hike
     var path: KeyPath<Hike.Observation, Range<Double>>
@@ -40,6 +49,7 @@ struct HikeGraph: View {
                         range: observation[keyPath: path],
                         overallRange: overallRange
                     )
+                    .animation(.ripple(index:index)) // Applying the ripple animation defined earlier
                 }
                 .offset(x: 0, y: proxy.size.height * heightRatio)
             }
