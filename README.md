@@ -1,4 +1,4 @@
-# Full Stack Fact REACT Application
+# Swift iOS Landmarks App
 <img src="public/example-landingPage.jpg" height="400">
 
 **Table of Contents**
@@ -11,10 +11,12 @@
 - [Execution](#execution)
 
 ## Introduction <a name="introduction"></a>
-An iOS app displaying a range of Landmarks with details and geographical information. Users can also favourite landmarks and filter a scrollable list of Landmarks to just their favourites.
+An iOS app which displays Landmarks' details and geographical information. Users also have the ability to filter and choose their favourite locations.
+
+https://chi-fact-forum.netlify.app/
 
 ## Motivation <a name="motivation"></a>
-This is a personal learning project aimed to teach me the tools and technology needed to build an iOS application. As later I would like to build my own iOS applications.
+This is a personal learning project aimed to teach me the tools and technology needed to build an iOS application using Apple's latest framework SwiftUI. As one of my ambitions is to create an iOS application.
 
 ## Technology Used <a name="technologyUsed"></a>
 <table>
@@ -34,15 +36,14 @@ This is a personal learning project aimed to teach me the tools and technology n
 Project is completed.
 
 ## Features <a name="features"></a>
-- Navigation bar
-- Featured window - Categories
-- Featured window - Horizontal scrollable cards
-- List window - Favourite Filter
-- Detail window - Landmark information
-- Detail window - favourite 
-- Detail window - Maps
+- Share a fact
+- Drill down menu
+- Vote on buttons
+- Source
+- Disputed
+- Resizable window
 
-### Navigation bar
+### Share a fact
 
 <img src="public/example-shareAFact.jpg" height="300">
 
@@ -50,39 +51,33 @@ Project is completed.
 * There is a 200 character limit which state changes as the user types
 * Upon clicking "Post" the form is disabled before closing once successfully uploaded (used POST API)
 
-### Featured window - Categories
+### Drill down menu
 
 <img src="public/example-drillDownMenu.jpg" height="300">
 
 * User can filter all the facts by clicking on different categories on the menu to the left
 * When a new category is selected the content view is re-rendered with the results of the filtered SQL query
 
-### Featured window - Horizontal scrollable cards
+### Vote on buttons
 
 <img src="public/example-voteButtons.jpg" height="150">
 
 * User can vote on a fact by selecting the different icons
 * The fact is ordered by the number of thumbs up plus mindblown facts in descending order
 
-### List window - Favourite Filter
+### Resizable window
 
 <img src="public/example-form1.jpg" height="300"><img src="public/example-form2.jpg" height="300"><img src="public/example-form3.jpg" height="300">
 
 * The web is transformed depending on the screensize it is being viewed on
 
-### Detail window - Landmark information
+### Disputed
 
 <img src="public/example-disputed.jpg" height="300">
 
 * If a fact has more red down votes than thumbs up plus mindblown it is tagged with a "Disputed" tag
 
-### Detail window - favourite 
-
-<img src="public/example-source.jpg" height="100">
-
-* User can click on "(Source)" which will open a new tab into the source of the fact
-
-Detail window - Maps
+### Source
 
 <img src="public/example-source.jpg" height="100">
 
