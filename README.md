@@ -1,5 +1,5 @@
 # Swift iOS Landmarks App
-<img src="public/example-landingPage.jpg" height="400">
+<img src="ExampleScreenshots/featured.jpg" height="500">
 
 **Table of Contents**
 - [Introduction](#introduction)
@@ -78,7 +78,7 @@ Project is completed.
 
 ### Detail window - favourite 
 
-<img src="ExampleScreenshots/example-detail-FavouriteIcon.jpg" height="500">
+<img src="ExampleScreenshots/example-list-FavouriteIcon.jpg" height="500">
 
 * User can click on "(Source)" which will open a new tab into the source of the fact
 
